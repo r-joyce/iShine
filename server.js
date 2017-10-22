@@ -32,7 +32,6 @@ var router = express.Router();              // get an instance of the express Ro
 
 router.get('/year/:yearId/make/:makeId/model/:modeId', function (req, res) {
 
-
     axios.get('https://apis.solarialabs.com/shine/v1/vehicle-stats/fuel-usage', {
         params: {
           year: req.params.yearId,
@@ -40,7 +39,7 @@ router.get('/year/:yearId/make/:makeId/model/:modeId', function (req, res) {
           model: req.params.modeId,
           apikey: 'bb8GYa9ZI3TbTFRwWhyoBVXlSeIkDFfU'
         }
-      }).then( res => console.log(res.data));
+      }).then( poop => res.send(poop.data));
   });
 
 // more routes for our API will happen here
