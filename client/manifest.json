@@ -12,8 +12,8 @@
   "permissions": [
    "activeTab"
   ],
-  "matches": [
-    "*.craigslist.org"
-  ],
-  "js": ["content.js"]
+  "content_scripts": [{
+    "matches": ["*://*.craigslist.org/*"],
+    "js": ["popup.js"]
+  }]
 }

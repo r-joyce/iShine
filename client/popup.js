@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       d = document;
 
       var f = d.createElement('form');
-      f.action = 'http://gtmetrix.com/analyze.html?bm';
+      f.action = 'http://www.google.com';
       f.method = 'post';
       var i = d.createElement('input');
       i.type = 'hidden';
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       i.value = tab.url;
       f.appendChild(i);
       d.body.appendChild(f);
-      f.submit();
+      // f.submit();
     });
   }, false);
 }, false);
