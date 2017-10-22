@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   var checkPageButton = document.getElementById('checkPage');
   checkPageButton.addEventListener('click', function() {
@@ -18,3 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, false);
 }, false);
+
+function findelem() {
+  findfive();
+}
+findelem();
