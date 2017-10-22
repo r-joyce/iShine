@@ -11,5 +11,9 @@
   },
   "permissions": [
    "activeTab"
-  ]
+  ],
+  "matches": [
+    "*.craigslist.org"
+  ],
+  "js": ["content.js"]
 }
